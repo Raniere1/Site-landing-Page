@@ -2,14 +2,17 @@
 
 :root{
 
-    --cor-fundo-principal: whitesmoke;
+    --cor-fundo-principal: white;
     --cor-fundo02:#E8ECF3 ;
     --cor-menu01:#1BA0F2;
     --cor-menu02:#1B8EF2;
     --cor-titulo-principal: rgb(21, 21, 189); 
     --cor-texto01:#284473;
     --cor-texto02:#F2A516;
+    --cor-texto03:#cd890be8;
+    --cor-botao-orcamento: #25d366;
     --cor-footer: black;
+    
 }
 
 *{
@@ -30,18 +33,66 @@ header{
     display: flex;
     flex-direction: column;
     color: white;
-
+    position: relative; 
+    overflow: hidden
 }
 
+.snow-flake {
+    position: absolute;
+    top: -10px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none; 
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(200px); 
+        opacity: 0;
+    }
+}
+
+header > picture{
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    left: 380px;
+    top: 30px;
+    
+    
+}
+
+
+header img{
+
+  object-fit: contain;
+  display: block;
+ 
+}
+
+#container-titulo{
+
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
 .titulo{
 
-    padding-top: 30px;
+    font-size: 60px;
 
 }
 
 header p{
-    padding-bottom: 10px;
+    font-size: 20px;
 }
+
+/* -----------------------COMEÇO MENU-----------------------*/
 
 #container-menu{
     
@@ -61,6 +112,7 @@ header p{
 }
 
 .menu a{
+    font-size: 24px;
     display: inline-block;
     text-decoration: none;
     padding: 10px 10px;
@@ -77,6 +129,134 @@ header p{
     box-shadow: 1px 1px 5px 0px;
 }
 
+/* -----------------------FIM MENU-----------------------*/
+
+/* ------------------COMEÇO CONTAINER SERVIÇOS-------------------*/
+
+#container-servico{
+    margin: 0px;
+    padding: 0px;
+}
+
+.borda-botao-orcamento{
+    background-color: wihte;
+    height: 150px;
+    width: 100%;
+    min-width: 340px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto 0px auto;
+    border-radius: 20px;
+}
+
+.btn-orcamento{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: var(--cor-texto02);
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px black;
+    transition: 0.3s;
+    }
+
+.btn-orcamento:hover{
+    background-color: var(--cor-texto03);
+    transform: scale(1.05);
+}
+
+#container-servicos h2{
+    text-align: center;
+    color: var(--cor-texto01);
+    font-size: 40px;
+    padding: 20px;
+   
+}
+
+.div-servicos{
+    
+    width: 60%;
+    height: 600px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    padding-right: 100px;
+   
+    
+}
+
+.topicos-servico{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    width: 350px;
+    height: 350px;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 20px 1px;
+
+}
+
+.topicos-servico-abaixo{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 200px ;
+
+}
+
+.topicos-servico > h3{
+
+    color:  var(--cor-texto03);
+    font-size: 25px;
+
+}
+
+
+.topicos-servico > p{
+    font-size: 20px;
+    margin: 5px;
+
+}
+
+.flex-row-servicos {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    flex-wrap: wrap;     
+}
+
+
+.box-imagem {
+
+    display: flex;      
+    justify-content: center;
+    align-items: center;
+    width: 500px;         
+    height: 600px;
+    padding-right:6px ;
+    
+}
+
+
+.box-imagem > img {
+    max-width: 100%;     
+    height: auto;     
+}
+
+/* -----------------------FIM CONTAINER SERVIÇOS-----------------------*/
+
+/* -----------------------RODAPÉ-----------------------*/
 footer{
     margin-top: 10px;
     padding: 10px;
@@ -87,7 +267,11 @@ footer{
 footer  p{
     font-size: 20px;
     text-align: center;
+    
 }
+
+/* -----------------------RODAPÉ-----------------------*/
+
 
 /* -----------------------RESPONSIVIDADE-----------------------*/
 
