@@ -24,3 +24,22 @@ function createSnow() {
 }
 
 setInterval(createSnow, 100);
+
+
+// 1. Criamos a função que decide o que fazer quando o elemento aparece
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Quando a div ENTRA na tela
+            entry.target.classList.add('visivel');
+        } else {
+            // Quando a div SAI da tela (é aqui que a mágica acontece)
+            entry.target.classList.remove('visivel');
+        }
+    });
+}, {
+    threshold: 0.1 // Ativa quando 10% do elemento aparece/some
+});
+
+const elementos = document.querySelectorAll('.revelar');
+elementos.forEach((el) => observer.observe(el));
