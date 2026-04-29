@@ -3,7 +3,7 @@
 :root{
 
     --cor-fundo-principal: white;
-    --cor-fundo02:#E8ECF3 ;
+    --cor-fundo02: whitesmoke ;
     --cor-menu01:#1BA0F2;
     --cor-menu02:#1B8EF2;
     --cor-titulo-principal: rgb(21, 21, 189); 
@@ -22,12 +22,7 @@
     font-family: 'Raj';
 }
 
-@font-face {
-    font-family: 'Raj';
-    src: url('../fonts/Rajdhani/Rajdhani-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 body{
     background-color: var(--cor-fundo-principal);
@@ -35,7 +30,7 @@ body{
 }
 
 header{
-    background-color: var(--cor-menu01);
+    background: linear-gradient(var(--cor-texto01), var(--cor-menu01))  ;
     width: 100%;
     height: 400px;
     align-items: center;
@@ -68,7 +63,7 @@ header > picture{
     align-items: center;
     overflow: hidden;
     position: absolute;
-    left: 280px;
+    left: 240px;
     top: 120px;
 }
 
@@ -102,12 +97,12 @@ header p{
 
 /* -----------------------COMEÇO MENU-----------------------*/
 
-/* #container-menu{
+ #container-menu{
     
     width: 100%;
-    margin-top: 10px;
+    margin-top: 90px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     background-color: var(--cor-menu02);
     box-shadow: 1px 5px 20px -10px black;
 }
@@ -135,15 +130,17 @@ header p{
     color: aliceblue;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0px;
-} */
+}
 
 /* -----------------------FIM MENU-----------------------*/
 
 /* ------------------COMEÇO CONTAINER SERVIÇOS-------------------*/
 
-#container-servico{
+#container-servicos{
     margin: 0px;
     padding: 0px;
+    background-color: var(--cor-fundo02);
+    padding-bottom: 70px;
 }
 
 .borda-botao-orcamento{
@@ -155,7 +152,7 @@ header p{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0px auto 0px auto;
+    margin: 90px auto 20px auto;
     border-radius: 20px;
 }
 
@@ -163,20 +160,22 @@ header p{
     display: inline-block;
     text-decoration: none;
     color: white;
-    font-size:20px;
+    font-size:30px;
     font-weight: bolder;
     text-align: center;
     background-color: var(--cor-texto02);
-    padding: 15px 30px;
-    border-radius: 30px;
+    padding: 30px 60px;
+    border-radius: 60px;
     box-shadow: 0 4px 15px black;
     transition: 0.3s;
+   
     }
 
 .btn-orcamento:hover{
     background-color: var(--cor-texto03);
     transform: scale(1.05);
 }
+
 
 #h2-servicos{
 
@@ -188,39 +187,45 @@ header p{
     text-align: center;
     color: var(--cor-fundo02);
     font-size: 40px;
-    margin: 100px 0px;
+    margin: 100px 0px 0px 0px;
     padding: 10px 20px; 
     background-color: var(--cor-texto01);
     border-radius: 30px;
     box-shadow: 1px 2px 7px 2px black;
 }
 
+#p-paragrafo-servicos{
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+    opacity: 0.5;
+}
+
 .div-servicos{
-    width: 60%;
-    height: 600px;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-right: 100px;
+    align-items: center;    
 }
 
 
 
 .topicos-servico{
-    background-color: white;
+    background-color: var(--cor-texto01);
     display: flex;
     align-items: center;
     flex-direction:column ;
-    width: 350px;
+    width: 300px;
     height: 350px;
-    margin-left: 100px;
+    margin-left: 60px;
     border-radius: 10px;
     box-shadow: 5px 3px 20px 1px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-
 }
+
 .topicos-servico.revelar.visivel{
     transform: translateY(0);
     opacity: 1;
@@ -228,30 +233,35 @@ header p{
 
 .topicos-servico.revelar.visivel:hover{
     transform: translateY(0) scale(1.1);
-    /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); */
     cursor: pointer;
 }
 
-.topicos-servico-abaixo{
-
+/* .topicos-servico-abaixo{
+    
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    height: 200px ;
+    height: 250px ;
 
-}
+} */
 
 .topicos-servico > h3{
 
-    color:  var(--cor-texto03);
-    font-size: 25px;
+    color:  white;
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 10px 0px;
 
 }
 
 
-.topicos-servico > p{
-    font-size: 20px;
-    margin: 5px;
+.p-servicos{
+
+    font-size: 24px;
+    margin: px 9px;
+    color: white;
+    text-align: center;
 
 }
 
@@ -274,7 +284,7 @@ header p{
 
 }
 
-.box-imagem {
+/* .box-imagem {
 
     display: flex;      
     justify-content: center;
@@ -289,7 +299,7 @@ header p{
 .box-imagem > img {
     max-width: 100%;     
     height: auto;     
-}
+} */
 
 /* -----------------------FIM CONTAINER SERVIÇOS-----------------------*/
 
