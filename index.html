@@ -1,125 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pro Frio Climatização</title>
-    <link rel="shortcut icon" href="medias/images/favicon02.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
-
-</head>
-<body>
-
+    <link
+      rel="shortcut icon"
+      href="medias/images/favicon02.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+  
+  <body>
+  
     <header>
-            <picture><img src="medias/images/Gemini_Generated_Image_m3ky0rm3ky0rm3ky-removebg-preview.png" alt="" height="70px"></picture>
+  
+        <picture
+        
+            ><img
+            src="medias/images/Gemini_Generated_Image_m3ky0rm3ky0rm3ky-removebg-preview.png"
+            alt=""
+            height="70px"/>
+     
+        </picture>
 
         <div id="container-titulo">
             <h1 class="titulo">Pro Frio Climatização</h1>
             <p>Soluções completas para seu conforto!</p>
         </div>
 
-        <section id="container-menu">
+        <span id="faixa-btn-menu">
+            <button id="btn-mobile" aria-label="abrir-menu" aria-haspopup="true" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+        </span>
     
-            <nav class="menu">
-                <a href="#">Serviços</a>
-                <a href="#">Quem somos</a>
-                <a href="#">Orçamentos</a>
-            </nav>
-        </section> 
-
     </header>
-    
-    <main>
 
-         <!-- <div class="borda-botao-orcamento">
+    <main>
+      <section id="container-menu">
+        <nav id="nav">
+          <a href="#container-servicos">Serviços</a>
+          <a href="#container-orcamentos">Orçamentos</a>
+          <a href="#container-quem-somos">Quem somos</a>
+        </nav>
+      </section>
+
+      <!-- <div class="borda-botao-orcamento">
                 <a class="btn-orcamento" href="#" target="_blank">
                     Faça seu orçamento
                 </a>
             </div> -->
 
-        <section id="container-servicos">
-           
-            <div id="h2-servicos">
-                <h2 class="h2-titulo">Nossos Serviços</h2>
+      <section id="container-servicos">
+        <div id="h2-servicos">
+          <h2 class="h2-titulo">Nossos Serviços</h2>
+        </div>
+
+        <p id="p-paragrafo-servicos">
+          Oferecemos soluções completas para todas as suas necessidades de
+          refrigeração
+        </p>
+
+        <div class="flex-row-servicos">
+          <div class="div-servicos">
+            <div class="topicos-servico revelar">
+              <h3>Instalação</h3>
+              <p class="p-servicos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                obcaecati incidunt eum debitis commodi dolor aperiam quia, nisi
+                illo expedita quos laudantium ipsum consectetur accusamus
+                voluptate, possimus deserunt repellendus vitae?
+              </p>
             </div>
-            
-            <p id="p-paragrafo-servicos">Oferecemos soluções completas para todas as suas necessidades de refrigeração</p>
 
-            <div class="flex-row-servicos">
-            <div class="div-servicos">
+            <div class="topicos-servico revelar">
+              <h3>Manutenção</h3>
+              <p class="p-servicos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                modi natus, aliquam nulla quisquam, numquam ipsam ut adipisci,
+                officia minima aspernatur optio! Reiciendis placeat deleniti
+                minus id harum quos aspernatur.
+              </p>
+            </div>
 
-                <div class="topicos-servico revelar">
-                    <h3>Instalação</h3>
-                    <p class="p-servicos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati incidunt eum debitis commodi dolor aperiam quia, nisi illo expedita quos laudantium ipsum consectetur accusamus voluptate, possimus deserunt repellendus vitae?</p>
+            <div class="topicos-servico revelar">
+              <h3>Limpeza</h3>
+              <p class="p-servicos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus accusantium, tenetur nisi adipisci cumque doloremque,
+                rerum at nostrum harum iure a in impedit nesciunt ratione culpa
+                distinctio ex tempore praesentium?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="borda-botao-orcamento">
+          <a class="btn-orcamento" href="">faça seu orçamento</a>
+        </div> -->
+      </section>
+
+      <section id="container-video">
+        <div></div>
+      </section>
+
+      <section id="container-orcamentos">
+         
+        <div>
+            <h2 class="h2-titulo">Solicite seu Orçamento</h2>
+            <p id="p-paragrafo-orcamento">Preencha o formulário e entraremos em contato o mais breve possível</p>
+
+          <form action="#">
+            <div class="campo-grupo">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="flex-campos">
+                <div class="campo-grupo">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" placeholder="(21) 98765-4321" required>
                 </div>
-
-                <div class="topicos-servico revelar">
-                    <h3>Manutenção</h3>
-                    <p class="p-servicos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi natus, aliquam nulla quisquam, numquam ipsam ut adipisci, officia minima aspernatur optio! Reiciendis placeat deleniti minus id harum quos aspernatur.</p>
+                <div class="campo-grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
                 </div>
-
-                <div class="topicos-servico revelar">
-                    <h3>limpeza</h3>
-                    <p class="p-servicos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium, tenetur nisi adipisci cumque doloremque, rerum at nostrum harum iure a in impedit nesciunt ratione culpa distinctio ex tempore praesentium?</p>
-                </div>
-                
-            </div> 
-            
-            <!-- <picture class="box-imagem">
-                <img src="medias/images/fundos/ar-condicionadoG.jpg" alt="imagem de ar-condicionado">
-            </picture> -->
-
             </div>
 
-            <div class="borda-botao-orcamento"><a class="btn-orcamento" href="">faça seu orçamento</a></div>
-        
-        </section>
-
-        <section id="container-video">
-
-            <div>
-
+            <div class="campo-grupo">
+                <label for="servico">Serviço Desejado *</label>
+                <select id="servico" required>
+                    <option value="" disabled selected>Selecione um serviço</option>
+                    <option value="instalacao">Instalação</option>
+                    <option value="manutencao">Manutenção</option>
+                    <option value="limpeza">Limpeza</option>
+                </select>
             </div>
 
-
-        </section>
-
-        <section id="orçamento">
-            <div>
-                
-                <h2>Solicite seu Orçamento</h2>
-
-                <label for="nome-cliente">Seu nome:</label>
-                <input type="text" id="nome-clinte" name="clinte">
-
-            </div>
-        </section>
-
-       <aside id="quem-somos">
-    
-            <div>
-    
-                <div id="h2-quem-somos">
-                    <h2 class="h2-titulo">Quem Somos?</h2>
-                </div>
-    
-                <picture>
-                    <img src="medias/images/logo-ProFrioClimatizacaol-removebg-preview.png" alt="Logo Pró Frio Climatização">
-                </picture>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque sed laborum amet molestias deserunt, quas quos? Et dicta distinctio, laboriosam beatae aliquid voluptate voluptatem? Dicta voluptatibus officia necessitatibus veniam voluptatum?</p>
+            <div class="campo-grupo">
+                <label for="mensagem">Descrição do Serviço</label>
+                <textarea id="mensagem" rows="4" placeholder="Descreva o problema ou serviço que você precisa..."></textarea>
             </div>
 
+            <button type="submit" class="btn-enviar">Enviar Solicitação</button>
+        </form>
 
-       </aside>
 
-         <div class="borda-botao-orcamento"><a class="btn-orcamento" href="">faça seu orçamento</a></div>
-        
+        </div>
+      </section>
+
+      <aside id="quem-somos">
+        <div>
+          <div id="h2-quem-somos">
+            <h2 class="h2-titulo">Quem Somos?</h2>
+          </div>
+
+          <picture>
+            <img
+              src="medias/images/LLprofrio-p.png"
+              alt="Logo Pró Frio Climatização"
+            />
+          </picture>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque sed
+            laborum amet molestias deserunt, quas quos? Et dicta distinctio,
+            laboriosam beatae aliquid voluptate voluptatem? Dicta voluptatibus
+            officia necessitatibus veniam voluptatum?
+          </p>
+        </div>
+      </aside>
+<!-- 
+      <div class="borda-botao-orcamento">
+        <a class="btn-orcamento" href="">faça seu orçamento</a>
+      </div> -->
     </main>
 
     <footer>
-        <p>&copy; 2026 Pro Frio Climatização - todos os direitos reservados.</p>
+      <p>&copy; 2026 Pro Frio Climatização - todos os direitos reservados.</p>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

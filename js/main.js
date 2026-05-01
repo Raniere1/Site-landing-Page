@@ -43,3 +43,36 @@ const observer = new IntersectionObserver((entries) => {
 
 const elementos = document.querySelectorAll('.revelar');
 elementos.forEach((el) => observer.observe(el));
+
+
+
+// LÓGICA DO MENU HAMBURGUER
+
+const btnMobile = document.getElementById("btn-mobile");
+const menuNavegacao = document.getElementById("container-menu");
+
+function toggleMenu(event) {
+    if (event.type === "touchstart") event.preventDefault();
+    
+    if (menuNavegacao) {
+        const isActive = menuNavegacao.classList.toggle("active");
+        
+        // Acessibilidade
+        event.currentTarget.setAttribute("aria-expanded", isActive);
+        event.currentTarget.setAttribute("aria-label", isActive ? "Fechar Menu" : "Abrir Menu");
+    }
+}
+
+if (btnMobile) {
+    btnMobile.addEventListener("click", toggleMenu);
+    btnMobile.addEventListener("touchstart", toggleMenu);
+}
+
+// Fechar menu ao clicar em um link
+const linksMenu = document.querySelectorAll("#nav a");
+linksMenu.forEach((link) => {
+    link.addEventListener("click", () => {
+        menuNavegacao.classList.remove("active");
+        btnMobile.setAttribute("aria-expanded", "false");
+    });
+});
