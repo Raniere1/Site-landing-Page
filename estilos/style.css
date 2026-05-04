@@ -3,14 +3,20 @@
 :root {
   --cor-fundo-principal: white;
   --cor-fundo02: whitesmoke;
-  --cor-menu01: #1ba0f2;
+  --cor-header01: #284473;
+  --cor-header02: #1b8ef2;
+  --cor-texto-header: white;
+  --cor-menu01: #284473;
   --cor-menu02: #1b8ef2;
+  --cor-menu03: #0b3f6d;
+  --cor-texto-menu: aliceblue;
   --cor-titulo-principal: rgb(21, 21, 189);
   --cor-texto01: #284473;
   --cor-texto02: #f2a516;
   --cor-texto03: #cd890be8;
-  --cor-botao-orcamento: #25d366;
-  --cor-footer: black;
+  --cor-texto04: white;
+  --cor-btn-hamburguer: #f2a516;
+  --cor-footer: rgb(9, 19, 64);
 }
 
 * {
@@ -24,13 +30,13 @@ body {
 }
 
 header {
-  background: linear-gradient(var(--cor-texto01), var(--cor-menu01));
+  background: linear-gradient(var(--cor-header01), var(--cor-header02));
   width: 100%;
   height: 400px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: var(--cor-texto-header);
   position: relative;
   overflow: hidden;
 }
@@ -51,20 +57,6 @@ header {
   }
 }
 
-header > picture {
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: absolute;
-  left: 240px;
-  top: 120px;
-}
-
-header img {
-  object-fit: contain;
-  display: block;
-}
-
 #container-titulo {
   padding-top: 100px;
   height: 150px;
@@ -76,7 +68,7 @@ header img {
 
 .titulo {
   font-family: "Raj";
-  font-size: 90px;
+  font-size: 95px;
 }
 
 header p {
@@ -89,7 +81,7 @@ header p {
   width: 100%;
   display: flex;
   justify-content: end;
-  background-color: #284473;
+  background-color: var(--cor-header01);
   border-top: solid #080a0c 2px;
   border-bottom: solid #080a0c 2px;
   box-shadow: 1px 5px 20px -10px black;
@@ -113,20 +105,13 @@ header p {
 
 #nav a:hover {
   background-color: var(--cor-menu02);
-  color: aliceblue;
+  color: var(--cor-texto-menu);
   border-radius: 5px;
   box-shadow: 1px 1px 5px 0px;
 }
 
 #btn-mobile {
   display: none;
-}
-
-#nav-principal {
-  display: flex;
-  justify-content: center;
-  background-color: #201b1b;
-  padding: 10px;
 }
 
 /* -----------------------FIM MENU-----------------------*/
@@ -140,7 +125,7 @@ header p {
   padding-bottom: 70px;
 }
 
-.borda-botao-orcamento {
+/* .borda-botao-orcamento {
   background-color: wihte;
   height: 150px;
   width: 100%;
@@ -151,9 +136,9 @@ header p {
   flex-direction: column;
   margin: 90px auto 20px auto;
   border-radius: 20px;
-}
+} */
 
-.btn-orcamento {
+/* .btn-orcamento {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -165,12 +150,12 @@ header p {
   border-radius: 60px;
   box-shadow: 0 4px 15px black;
   transition: 0.3s;
-}
+} */
 
-.btn-orcamento:hover {
+/* .btn-orcamento:hover {
   background-color: var(--cor-texto03);
   transform: scale(1.05);
-}
+} */
 
 #h2-servicos {
   display: flex;
@@ -231,18 +216,8 @@ header p {
   cursor: pointer;
 }
 
-/* .topicos-servico-abaixo{
-    
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 250px ;
-
-} */
-
 .topicos-servico > h3 {
-  color: white;
+  color: var(--cor-texto04);
   font-size: 35px;
   font-weight: bolder;
   margin: 10px 0px;
@@ -251,7 +226,7 @@ header p {
 .p-servicos {
   font-size: 24px;
   margin: px 9px;
-  color: white;
+  color: var(--cor-texto04);
   text-align: center;
 }
 
@@ -282,7 +257,7 @@ header p {
   background-color: var(--cor-fundo02); /* Cor de fundo suave */
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: var(--cor-fundo02);
 }
 
 #p-paragrafo-orcamento {
@@ -297,7 +272,7 @@ form {
 }
 
 .formulario-box {
-  background-color: white;
+  background-color: var(--cor-fundo02);
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -309,11 +284,6 @@ form {
   color: var(--cor-texto01);
   font-size: 32px;
   margin-bottom: 10px;
-}
-
-.formulario-box p {
-  color: #666;
-  margin-bottom: 30px;
 }
 
 .campo-grupo {
@@ -362,7 +332,7 @@ form {
   width: 100%;
   padding: 15px;
   background-color: var(--cor-texto01);
-  color: white;
+  color: var(--cor-texto04);
   border: none;
   border-radius: 8px;
   font-size: 18px;
@@ -413,18 +383,14 @@ form {
   margin: 0px 20px 0px 20px;
 }
 
-.es {
-  color: #145fa0;
-}
-
 /* -----------------------FIM CONTAINER QUEM SOMOS-----------------------*/
 
 /* -----------------------RODAPÉ-----------------------*/
 footer {
   margin-top: 10px;
   padding: 10px;
-  color: white;
-  background-color: var(--cor-texto01);
+  color: var(--cor-texto04);
+  background-color: var(--cor-footer);
 }
 
 footer p {
@@ -437,8 +403,9 @@ footer p {
 /* -----------------------RESPONSIVIDADE-----------------------*/
 
 /* -----------------------TABLETS-----------------------*/
-  @media (min-width: 751px) and (max-width: 1024px) {
-  html,body {
+@media (min-width: 751px) and (max-width: 1024px) {
+  html,
+  body {
     min-width: 100%;
     overflow-x: hidden;
     position: relative;
@@ -459,7 +426,7 @@ footer p {
   }
 
   .titulo {
-    font-size: 55px; 
+    font-size: 55px;
     text-align: center;
   }
 
@@ -468,9 +435,8 @@ footer p {
     text-align: center;
   }
 
-  
- #faixa-btn-menu {
-    background-color: var(--cor-texto02);
+  #faixa-btn-menu {
+    background-color: var(--cor-btn-hamburguer);
     width: 100%;
     margin-left: -40px;
     box-shadow: 3px 2px 5px 5px rgb(25, 205, 240);
@@ -550,18 +516,16 @@ footer p {
 
   .topicos-servico {
     margin-left: 0; /* Remove o recuo da esquerda que tira o centro */
-    width: 90%;    /* Card ocupa quase toda a largura disponível */
+    width: 90%; /* Card ocupa quase toda a largura disponível */
     max-width: 350px;
     height: auto;
     padding-bottom: 20px;
   }
 
-  
-  .flex-row-servicos{
+  .flex-row-servicos {
     min-height: auto;
     margin-top: 50px;
   }
-
 
   .h2-titulo {
     font-size: 30px;
@@ -570,10 +534,10 @@ footer p {
 
   /* 4. Formulário de Orçamento */
   .flex-campos {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 0;
   }
-  
+
   .formulario-box {
     padding: 20px;
     width: 95%;
@@ -597,9 +561,7 @@ footer p {
   }
 }
 
-
 /* -----------------------TABLETS-----------------------*/
-
 
 /*---------------------DISPOSITIVOS MÓVEIS---------------------*/
 @media screen and (max-width: 750px) {
@@ -634,9 +596,9 @@ footer p {
   }
 
   #faixa-btn-menu {
-    background-color: var(--cor-texto02);
+    background-color: var(--cor-btn-hamburguer);
     width: 100%;
-    margin-top: 24px;
+    margin-top: 26px;
     box-shadow: 3px 2px 5px 5px rgb(25, 205, 240);
   }
 
@@ -647,7 +609,7 @@ footer p {
     background: none;
     border: none;
     cursor: pointer;
-    color: white;
+    color: var(--cor-texto04);
     margin: 0px auto;
   }
 
@@ -686,7 +648,7 @@ footer p {
   }
 
   #nav {
-    background-color: #0b3f6d;
+    background-color: var(--cor-menu03);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -695,7 +657,7 @@ footer p {
   }
 
   #nav a {
-    background-color: #0b3f6d;
+    background-color: var(--cor-menu03);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -703,9 +665,6 @@ footer p {
     padding: 15px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
-  }
-
-  #container-servicos {
   }
 
   .h2-titulo {
@@ -775,25 +734,20 @@ footer p {
 
   /* -----------------COMEÇO CONTAINER QUEM sOMOS----------------*/
 
- 
-  
   .logo-paragrafo-quemSomos {
     display: block;
     height: auto;
     width: 100%;
-    margin-bottom: 30px; 
-    text-align: center;   
+    margin-bottom: 30px;
+    text-align: center;
   }
 
-
   .p-quem-somos {
-    width: 345px;    
+    width: 345px;
     font-size: 16px;
     font-weight: bold;
     margin: 0px 20px 0px 20px;
   }
-
-  
 
   /* -----------------------FIM CONTAINER QUEM SOMOS-----------------------*/
 
@@ -802,9 +756,9 @@ footer p {
   footer {
     margin-top: 10px;
     padding: 10px;
-    background-color: var(--cor-fundo02);
+    background-color: var(--cor-footer);
     text-align: center;
-    color: #080a0c;
+    color: var(--cor-texto04);
   }
 
   footer p {
