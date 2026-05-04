@@ -118,8 +118,8 @@ header p {
   box-shadow: 1px 1px 5px 0px;
 }
 
-#btn-mobile{
-    display: none;
+#btn-mobile {
+  display: none;
 }
 
 #nav-principal {
@@ -278,138 +278,142 @@ header p {
 /* ---------------------COMEÇO CONTAINER ORÇMENTO---------------------*/
 
 #container-orcamentos {
-    padding: 10px 20px;
-    background-color: var(--cor-fundo02); /* Cor de fundo suave */
-    display: flex;
-    justify-content: center;
-    background-color: white;
+  padding: 10px 20px;
+  background-color: var(--cor-fundo02); /* Cor de fundo suave */
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }
 
-#p-paragrafo-orcamento{
-
-    margin: 20px;
-    font-size: 19px;
+#p-paragrafo-orcamento {
+  margin: 20px;
+  font-size: 19px;
 }
 
-form{
-    border: solid 1px black;
-    padding: 20px;
-    border-radius: 20px;
+form {
+  border: solid 1px black;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .formulario-box {
-    background-color: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 100%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
 }
 
 .formulario-box h2 {
-    color: var(--cor-texto01);
-    font-size: 32px;
-    margin-bottom: 10px;
+  color: var(--cor-texto01);
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .formulario-box p {
-    color: #666;
-    margin-bottom: 30px;
+  color: #666;
+  margin-bottom: 30px;
 }
 
-
 .campo-grupo {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .campo-grupo label {
-    font-weight: bold;
-    color: var(--cor-texto01);
-    margin-bottom: 8px;
-    font-size: 14px;
+  font-weight: bold;
+  color: var(--cor-texto01);
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
-.campo-grupo input, 
-.campo-grupo select, 
+.campo-grupo input,
+.campo-grupo select,
 .campo-grupo textarea {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
 }
 
 /* Efeito de foco azulado */
-.campo-grupo input:focus, 
-.campo-grupo select:focus, 
+.campo-grupo input:focus,
+.campo-grupo select:focus,
 .campo-grupo textarea:focus {
-    border-color: var(--cor-menu01);
-    box-shadow: 0 0 5px rgba(27, 160, 242, 0.3);
+  border-color: var(--cor-menu01);
+  box-shadow: 0 0 5px rgba(27, 160, 242, 0.3);
 }
 
-
 .flex-campos {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .flex-campos .campo-grupo {
-    flex: 1;
+  flex: 1;
 }
 
 /* BOTÃO ENVIAR */
 .btn-enviar {
-    width: 100%;
-    padding: 15px;
-    background-color: var(--cor-texto01); 
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--cor-texto01);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
 .btn-enviar:hover {
-    background-color: var(--cor-menu02);
-    transform: translateY(-2px);
+  background-color: var(--cor-menu02);
+  transform: translateY(-2px);
 }
 
-/* ---------------------FIM CONTAINER ORÇMENTO---------------------*/
+/* ---------------------FIM CONTAINER ORÇMENTO------------------*/
 
-/* ---------------------COMEÇO CONTAINER QUEM SOMOS---------------------*/
+/* -----------------COMEÇO CONTAINER QUEM sOMOS----------------*/
 
-#box-logo-p{
+#box-logo-p {
   display: flex;
   padding-top: 50px;
 }
-
 
 #h2-quem-somos {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.logo-quemSomos{
+.logo-quemSomos {
   display: flex;
   padding-top: 30px;
   padding-left: 200px;
 }
 
-
-.h3-logo{
-  
-  color: #0c2a45;
-  font-size: 40px;
+.logo-paragrafo-quemSomos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.es{
+.p-quem-somos {
+  width: 600px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px 20px 0px 20px;
+}
+
+.es {
   color: #145fa0;
 }
 
@@ -419,7 +423,8 @@ form{
 footer {
   margin-top: 10px;
   padding: 10px;
-  background-color: var(--cor-fundo02);
+  color: white;
+  background-color: var(--cor-texto01);
 }
 
 footer p {
@@ -431,201 +436,379 @@ footer p {
 
 /* -----------------------RESPONSIVIDADE-----------------------*/
 
+/* -----------------------TABLETS-----------------------*/
+  @media (min-width: 751px) and (max-width: 1024px) {
+  html,body {
+    min-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+  header {
+    max-height: 102px; /* Destrava a altura fixa de 400px */
+    padding: 40px 20px;
+  }
+
+  header > picture {
+    display: none;
+  }
+
+  #container-titulo {
+    margin-top: -100px;
+    padding-bottom: 21px;
+    height: auto;
+  }
+
+  .titulo {
+    font-size: 55px; 
+    text-align: center;
+  }
+
+  header p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  
+ #faixa-btn-menu {
+    background-color: var(--cor-texto02);
+    width: 100%;
+    margin-left: -40px;
+    box-shadow: 3px 2px 5px 5px rgb(25, 205, 240);
+  }
+
+  #btn-mobile {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 0px auto;
+  }
+
+  #hamburguer {
+    display: block;
+    width: 40px;
+    border-top: 2px solid currentColor;
+    position: relative;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+  }
+
+  #container-menu {
+    width: 100%;
+    background-color: var(--cor-menu02);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    box-shadow: none;
+  }
+
+  #container-menu.active {
+    max-height: 300px;
+    display: flex;
+    opacity: 1;
+  }
+
+  #nav {
+    background-color: #0b3f6d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #nav a {
+    background-color: #0b3f6d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+  }
+
+  /* 3. Seção de Serviços (Cards) */
+  .div-servicos {
+    height: auto; /* Destrava os 500px fixos */
+    flex-direction: column; /* Empilha os cards um embaixo do outro */
+    gap: 30px;
+  }
+
+  .topicos-servico {
+    margin-left: 0; /* Remove o recuo da esquerda que tira o centro */
+    width: 90%;    /* Card ocupa quase toda a largura disponível */
+    max-width: 350px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  
+  .flex-row-servicos{
+    min-height: auto;
+    margin-top: 50px;
+  }
+
+
+  .h2-titulo {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  /* 4. Formulário de Orçamento */
+  .flex-campos {
+    flex-direction: column; 
+    gap: 0;
+  }
+  
+  .formulario-box {
+    padding: 20px;
+    width: 95%;
+  }
+
+  /* 5. Quem Somos */
+  .logo-paragrafo-quemSomos {
+    flex-direction: column; /* Empilha a logo e o texto */
+    text-align: center;
+  }
+
+  .p-quem-somos {
+    width: 90%; /* Destrava os 600px fixos */
+    font-size: 18px;
+    margin: 20px auto;
+  }
+
+  .logo-quemSomos {
+    padding-left: 0; /* Centraliza a logo */
+    justify-content: center;
+  }
+}
+
+
+/* -----------------------TABLETS-----------------------*/
+
+
 /*---------------------DISPOSITIVOS MÓVEIS---------------------*/
 @media screen and (max-width: 750px) {
-    html,
-    body {
-        min-width: 100%;
-        overflow-x: hidden;
-        position: relative;
-        
-    }
+  html,
+  body {
+    min-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
 
-    header {
-        height: 250px;    
-        align-items: center;
-        justify-content: center;
-    }
-    
-    header > picture{
-        display: none;
-    }
+  header {
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+  }
 
+  header > picture {
+    display: none;
+  }
 
-    #container-titulo{
-        margin-top: -60px;
+  #container-titulo {
+    margin-top: -60px;
+  }
+  .titulo {
+    font-size: 33px;
+  }
 
-    }
-    .titulo {
+  header p {
+    font-size: 15px;
+    padding: 2px;
+    margin-bottom: 10px;
+  }
 
-        font-size: 33px;
-    }
+  #faixa-btn-menu {
+    background-color: var(--cor-texto02);
+    width: 100%;
+    margin-top: 24px;
+    box-shadow: 3px 2px 5px 5px rgb(25, 205, 240);
+  }
 
-    header p {
-        font-size: 15px;
-        padding: 2px;
-        margin-bottom: 10px;
-    }
+  #btn-mobile {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 0px auto;
+  }
 
-    #faixa-btn-menu{
-        background-color: var(--cor-texto02);
-        width: 100%;
-        margin-top: 24px;
-        box-shadow: 3px 2px 5px 5px rgb(25, 205, 240);
-    }
+  #hamburguer {
+    display: block;
+    width: 40px;
+    border-top: 2px solid currentColor;
+    position: relative;
+  }
 
-    #btn-mobile {
-        width: 100%;
-        display: flex;
-        padding: 10px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: white;
-        margin: 0px auto;
-            
-    }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+  }
 
+  #container-menu {
+    width: 100%;
+    background-color: var(--cor-menu02);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    box-shadow: none;
+  }
 
+  #container-menu.active {
+    max-height: 300px;
+    display: flex;
+    opacity: 1;
+  }
 
-    #hamburguer {
-
-        display: block;
-        width: 40px;
-        border-top: 2px solid currentColor;
-        position: relative;
-    
-    }
-
-    #hamburguer::after,
-    #hamburguer::before {
-        content: "";
-        display: block;
-        width: 40px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: 0.3s;
-     }
-
-     #container-menu {
-        width: 100%;
-        background-color: var(--cor-menu02);
-        overflow: hidden;
-        max-height: 0;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-        box-shadow: none;
-    }
-    
-    #container-menu.active {
-        max-height: 300px;
-        display: flex;
-        opacity: 1;
-    }
-
-    #nav {
-        background-color: #0b3f6d;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-   #nav a {
+  #nav {
     background-color: #0b3f6d;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        padding: 15px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        box-sizing: border-box;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
 
-    #container-servicos{
-     
-    }
+  #nav a {
+    background-color: #0b3f6d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+  }
 
-    .h2-titulo{
-        font-size: 20px;
-        margin-top: 50px;
-    }
+  #container-servicos {
+  }
 
-    #p-paragrafo-servicos{
-        font-size: 15px;
-        margin-top: 10px;
-    }
+  .h2-titulo {
+    font-size: 20px;
+    margin-top: 50px;
+  }
 
-    .flex-row-servicos{
-        height: 900px;
-    }
+  #p-paragrafo-servicos {
+    font-size: 15px;
+    margin-top: 10px;
+  }
 
-    .div-servicos{
-        display: block;
-        margin-top: -400px;
-    }
+  .flex-row-servicos {
+    height: 900px;
+  }
 
-    .topicos-servico{
-        height: 260px;
-        width: 250px;
-        margin: 50px auto;
-        
-        padding: 0px;
-        
-    }
-    
-    .topicos-servico h3{
-        font-size: 20px;
-    }
+  .div-servicos {
+    display: block;
+    margin-top: -400px;
+  }
 
-    .p-servicos{
-        font-size: 16px;
-        margin: 0px 15px 0px 15px;
-        line-height: 1.4;
-      }
+  .topicos-servico {
+    height: 260px;
+    width: 250px;
+    margin: 50px auto;
 
-      .h2-servicos{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+    padding: 0px;
+  }
 
-      }
+  .topicos-servico h3 {
+    font-size: 20px;
+  }
 
-      .h2-titulo{
-        width: 250px;
-      }
+  .p-servicos {
+    font-size: 16px;
+    margin: 0px 15px 0px 15px;
+    line-height: 1.4;
+  }
 
-      #p-paragrafo-orcamento{
-        text-align: center;
-        font-size: 16px;
-        width: 300px;
-        
-      }
+  .h2-servicos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-      form{
-        width: 300px;
-        height: 570px;
-      }
+  .h2-titulo {
+    width: 250px;
+  }
 
-      .flex-campos{
-        display: block;
-      }
-      
-/* -----------------------RODAPÉ-----------------------*/
+  #p-paragrafo-orcamento {
+    text-align: center;
+    font-size: 16px;
+    width: 300px;
+  }
+
+  form {
+    width: 300px;
+    height: 570px;
+  }
+
+  .flex-campos {
+    display: block;
+  }
+
+  /* ---------------------FIM CONTAINER ORÇMENTO------------------*/
+
+  /* -----------------COMEÇO CONTAINER QUEM sOMOS----------------*/
+
+ 
+  
+  .logo-paragrafo-quemSomos {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px; 
+    text-align: center;   
+  }
+
+
+  .p-quem-somos {
+    width: 345px;    
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 20px 0px 20px;
+  }
+
+  
+
+  /* -----------------------FIM CONTAINER QUEM SOMOS-----------------------*/
+
+  /* -----------------------RODAPÉ-----------------------*/
 
   footer {
     margin-top: 10px;
     padding: 10px;
     background-color: var(--cor-fundo02);
     text-align: center;
+    color: #080a0c;
   }
 
   footer p {
     font-size: small;
   }
-/* -----------------------RODAPÉ-----------------------*/
-
+  /* -----------------------RODAPÉ-----------------------*/
 }
