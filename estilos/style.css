@@ -350,7 +350,7 @@ form{
     box-shadow: 0 0 5px rgba(27, 160, 242, 0.3);
 }
 
-/* DOIS CAMPOS NA MESMA LINHA */
+
 .flex-campos {
     display: flex;
     gap: 20px;
@@ -364,7 +364,7 @@ form{
 .btn-enviar {
     width: 100%;
     padding: 15px;
-    background-color: var(--cor-texto01); /* Azul escuro igual ao seu header */
+    background-color: var(--cor-texto01); 
     color: white;
     border: none;
     border-radius: 8px;
@@ -384,10 +384,33 @@ form{
 
 /* ---------------------COMEÇO CONTAINER QUEM SOMOS---------------------*/
 
+#box-logo-p{
+  display: flex;
+  padding-top: 50px;
+}
+
+
 #h2-quem-somos {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo-quemSomos{
+  display: flex;
+  padding-top: 30px;
+  padding-left: 200px;
+}
+
+
+.h3-logo{
+  
+  color: #0c2a45;
+  font-size: 40px;
+}
+
+.es{
+  color: #145fa0;
 }
 
 /* -----------------------FIM CONTAINER QUEM SOMOS-----------------------*/
@@ -561,7 +584,37 @@ footer p {
         font-size: 16px;
         margin: 0px 15px 0px 15px;
         line-height: 1.4;
-    }
+      }
+
+      .h2-servicos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+
+      .h2-titulo{
+        width: 250px;
+      }
+
+      #p-paragrafo-orcamento{
+        text-align: center;
+        font-size: 16px;
+        width: 300px;
+        
+      }
+
+      form{
+        width: 300px;
+        height: 570px;
+      }
+
+      .flex-campos{
+        display: block;
+      }
+      
+/* -----------------------RODAPÉ-----------------------*/
 
   footer {
     margin-top: 10px;
@@ -573,4 +626,6 @@ footer p {
   footer p {
     font-size: small;
   }
+/* -----------------------RODAPÉ-----------------------*/
+
 }
