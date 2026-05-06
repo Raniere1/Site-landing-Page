@@ -398,6 +398,10 @@ footer p {
   text-align: center;
 }
 
+.es {
+  color: #145fa0;
+}
+
 /* -----------------------RODAPÉ-----------------------*/
 
 /* -----------------------RESPONSIVIDADE-----------------------*/
@@ -507,16 +511,16 @@ footer p {
     box-sizing: border-box;
   }
 
-  /* 3. Seção de Serviços (Cards) */
+ 
   .div-servicos {
-    height: auto; /* Destrava os 500px fixos */
-    flex-direction: column; /* Empilha os cards um embaixo do outro */
+    height: auto; 
+    flex-direction: column; 
     gap: 30px;
   }
 
   .topicos-servico {
-    margin-left: 0; /* Remove o recuo da esquerda que tira o centro */
-    width: 90%; /* Card ocupa quase toda a largura disponível */
+    margin-left: 0;
+    width: 90%; 
     max-width: 350px;
     height: auto;
     padding-bottom: 20px;
@@ -532,7 +536,7 @@ footer p {
     margin-top: 50px;
   }
 
-  /* 4. Formulário de Orçamento */
+  
   .flex-campos {
     flex-direction: column;
     gap: 0;
@@ -543,20 +547,20 @@ footer p {
     width: 95%;
   }
 
-  /* 5. Quem Somos */
+ 
   .logo-paragrafo-quemSomos {
-    flex-direction: column; /* Empilha a logo e o texto */
+    flex-direction: column;
     text-align: center;
   }
 
   .p-quem-somos {
-    width: 90%; /* Destrava os 600px fixos */
+    width: 90%; 
     font-size: 18px;
     margin: 20px auto;
   }
 
   .logo-quemSomos {
-    padding-left: 0; /* Centraliza a logo */
+    padding-left: 0; 
     justify-content: center;
   }
 }
